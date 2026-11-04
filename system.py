@@ -1,5 +1,5 @@
 
-def mainmenu():
+def getMenuChoice():
     """Display menu and get a valid choice."""
     print("CAESAR CIPHER MESSAGING")
     print("-----------------------")
@@ -134,7 +134,7 @@ def replyToMessage(filename, alphabet, shift):
 def main():
     """Run the Caesar cipher messaging program."""
     while True:
-        choice = mainmenu()
+        choice = getMenuChoice()
         if choice == 1:
             createMessage()
         elif choice == 2:
