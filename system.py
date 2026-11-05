@@ -91,7 +91,7 @@ def readMessages():
         if filename.lower() == "m":
             return
         try:
-            with open(filename, "r") as file:
+            with open(filename.txt, "r") as file:
                 lines = file.readlines()
             alphabet = lines[0].strip()
             shift = int(lines[1].strip())
